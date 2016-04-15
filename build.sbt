@@ -35,8 +35,7 @@ lazy val root = (project in file(".")).
   ).
   aggregate(
     idl,
-    server
-  )
+    server)
 
 lazy val idl = (project in file("idl")).
   settings(baseSettings).
@@ -74,6 +73,4 @@ lazy val server = (project in file("server")).
       "com.twitter.inject" %% "inject-server" % versions.finatra % "test" classifier "tests"
     )
   ).
-  dependsOn(
-    idl
-  )
+  dependsOn(idl)
