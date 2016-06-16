@@ -10,8 +10,8 @@ A simple client implementation
 
 ```scala
 val client: PingService[Future] = ThriftMux.client
-    .configured(param.Tracer(NullTracer))
-    .configured(param.Stats(NullStatsReceiver))
+    .withTracer(NullTracer)
+    .withStatsReceiver(NullStatsReceiver)
     .newIface[PingService.FutureIface]("localhost:9999")
 
 
