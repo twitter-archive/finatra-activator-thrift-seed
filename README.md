@@ -15,9 +15,9 @@ val client: PingService[Future] = ThriftMux.client
     .newIface[PingService.FutureIface]("localhost:9999")
 
 
-client.ping().onSuccess(response => {
+client.ping().onSuccess { response =>
   println(s"response: $response")
-})
+}
 ```
 
 ## Running
