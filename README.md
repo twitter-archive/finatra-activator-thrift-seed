@@ -24,7 +24,7 @@ client.ping().onSuccess { response =>
 
 Run the server using sbt
 ```sh
-sbt server/run
+sbt run
 ```
 
 ## License
