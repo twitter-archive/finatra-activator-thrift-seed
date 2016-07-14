@@ -44,6 +44,9 @@ lazy val server = (project in file("server")).
     name := "thrift-server",
     moduleName := "thrift-server",
     mainClass in (Compile, run) := Some("com.example.ExampleServerMain"),
+    javaOptions ++= Seq(
+      "-Dlog.service.output=/dev/stderr",
+      "-Dlog.access.output=/dev/stderr"),
     libraryDependencies ++= Seq(
       "com.twitter" %% "finatra-thrift" % versions.finatra,
       "ch.qos.logback" % "logback-classic" % versions.logback,
