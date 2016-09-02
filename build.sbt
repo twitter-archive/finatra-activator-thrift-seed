@@ -3,7 +3,7 @@ import sbt.Keys._
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {
-  val finatra = "2.2.0"
+  val finatra = "2.3.0"
   val guice = "4.0"
   val logback = "1.1.7"
   val mockito = "1.9.5"
@@ -79,5 +79,3 @@ lazy val idl = (project in file("idl")).
       "com.twitter" %% "finatra-thrift" % versions.finatra
     )
   )
-
-fork in run := true
