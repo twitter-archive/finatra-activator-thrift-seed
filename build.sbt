@@ -18,7 +18,7 @@ lazy val baseSettings = Seq(
   ivyScala := ivyScala.value.map(_.copy(overrideScalaVersion = true)),
   libraryDependencies ++= Seq(
     "org.mockito" % "mockito-core" % versions.mockito % "test",
-    "org.scalacheck" %% "scalacheck" % versions.scalaCheck % "test",
+    "org.scalacheck" %% "scalacheck" % versions.scalacheck % "test",
     "org.scalatest" %% "scalatest" % versions.scalatest % "test",
     "org.specs2" %% "specs2" % versions.specs2 % "test"
   ),
