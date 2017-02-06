@@ -3,13 +3,13 @@ import sbt.Keys._
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {
-  val finatra = "2.7.0"
+  val finatra = "2.8.0"
   val guice = "4.0"
   val logback = "1.1.7"
   val mockito = "1.9.5"
   val scalatest = "3.0.0"
   val scalacheck = "1.13.4"
-  val specs2 = "2.3.12"
+  val specs2 = "2.4.17"
 }
 
 lazy val baseSettings = Seq(
