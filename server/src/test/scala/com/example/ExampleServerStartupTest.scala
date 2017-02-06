@@ -10,9 +10,7 @@ class ExampleServerStartupTest extends FeatureTest {
     twitterServer = new ExampleServer,
     stage = Stage.PRODUCTION)
 
-  "server" should {
-    "startup" in {
-      server.assertHealthy()
-    }
+  test("server#startup") {
+    server.assertHealthy()
   }
 }

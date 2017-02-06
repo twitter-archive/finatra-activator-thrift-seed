@@ -11,9 +11,7 @@ class ExampleServerFeatureTest extends FeatureTest {
 
   val client = server.thriftClient[PingService[Future]](clientId = "client123")
 
-  "service" should {
-    "respond to ping" in {
-      client.ping().value should be("pong")
-    }
+  test("service#respond to ping") {
+    client.ping().value should be("pong")
   }
 }
