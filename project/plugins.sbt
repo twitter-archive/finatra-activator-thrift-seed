@@ -1,6 +1,3 @@
-resolvers ++= Seq(
-  Classpaths.sbtPluginReleases,
-  "Twitter Maven" at "https://maven.twttr.com"
-)
+resolvers += Classpaths.sbtPluginReleases
 
-addSbtPlugin("com.twitter" % "scrooge-sbt-plugin" % "4.5.0")
+addSbtPlugin("com.twitter" % "scrooge-sbt-plugin" % "4.15.0")
