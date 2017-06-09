@@ -3,7 +3,7 @@ import sbt.Keys._
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {
-  val finatra = "2.10.0"
+  val finatra = "2.11.0"
   val guice = "4.0"
   val junit = "4.12"
   val logback = "1.1.7"
