@@ -15,7 +15,7 @@ lazy val versions = new {
 
 lazy val baseSettings = Seq(
   version := "1.0.0-SNAPSHOT",
-  scalaVersion := "2.11.8",
+  scalaVersion := "2.12.1",
   ivyScala := ivyScala.value.map(_.copy(overrideScalaVersion = true)),
   libraryDependencies ++= Seq(
     "junit" % "junit" % versions.junit % "test",
@@ -74,7 +74,7 @@ lazy val idl = (project in file("idl")).
     name := "thrift-idl",
     moduleName := "thrift-idl",
     scroogeThriftDependencies in Compile := Seq(
-      "finatra-thrift_2.11"
+      "finatra-thrift_2.12"
     ),
     libraryDependencies ++= Seq(
       "com.twitter" %% "finatra-thrift" % versions.finatra
