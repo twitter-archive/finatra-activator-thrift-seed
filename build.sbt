@@ -75,7 +75,7 @@ lazy val idl = (project in file("idl")).
     name := "thrift-idl",
     moduleName := "thrift-idl",
     scroogeThriftDependencies in Compile := Seq(
-      "finatra-thrift_2.11"
+      if(scalaVersion.value.startsWith("2.11")) "finatra-thrift_2.11" else "finatra-thrift_2.12"
     ),
     libraryDependencies ++= Seq(
       "com.twitter" %% "finatra-thrift" % versions.finatra
