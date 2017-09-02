@@ -15,7 +15,7 @@ lazy val versions = new {
 
 lazy val baseSettings = Seq(
   version := "1.0.0-SNAPSHOT",
-  scalaVersion := "2.11.11",
+  scalaVersion := "2.12.1",
   crossScalaVersions := Seq("2.11.11", "2.12.1"),
   ivyScala := ivyScala.value.map(_.copy(overrideScalaVersion = true)),
   libraryDependencies ++= Seq(
